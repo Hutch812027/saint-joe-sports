@@ -15,7 +15,19 @@
 import streamlit as st
 from streamlit.logger import get_logger
 
+add_selectbox = st.sidebar.selectbox()
+"Choose a sport",
+("Football", "Basketball", "Baseball", "Lacrosse", "Hockey", "Soccer", "Wrestling", "Golf", "Tennis", "Volleyball", "Swimming and Diving", "Bowling", "Esports")
+
+with st.sidebar:
+    add_radio = st.radio()
+    "Pick one of these options:"
+    ("Stats", "Rosters", "Schedule")
+
 LOGGER = get_logger(__name__)
+
+
+
 
 
 def run():
@@ -30,7 +42,7 @@ def run():
 
     st.markdown(
         """
-        Streamlit is an open-source app framework built specifically for
+        Streamlite is an open-source app framework built specifically for
         Machine Learning and Data Science projects.
         **👈 Select a demo from the sidebar** to see some examples
         of what Streamlit can do!
